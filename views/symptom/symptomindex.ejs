@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptoms</title>
+</head>
+
+<body>
+    <h1>Add a Symptom</h1>
+    <form action="/symptom" method="POST">
+        <div>
+            <label for="symptomName">Name</label>
+            <input type="text" id="symptomName" name="symptomName">
+        </div>
+        
+        <div>
+            <label for="dateprescibed">Date</label>
+            <input type="date" id="dateprescribed" name="dateprescribed">
+        </div>
+        <div>
+            <label for="doctorprescribed">Doctor</label>
+            <input type="text" id="doctorprescribed" name="doctorprescribed">
+        </div>
+        <div>
+            <label for="generalinstructions">Instructions</label>
+            <input type="text" id="generalinstructions" name="generalinstructions">
+        </div>
+
+        <button>Add prescription</button>
+    </form>
+
+</body>
+
+</html>
+

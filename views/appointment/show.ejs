@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+</head>
+<body>
+   <% for(appointment of appointments){%>
+    <%if(appointment.author.equals(currentUser._id)) {%>
+    <div>
+    <ul>
+    <li>Name:<%=appointment.appointmentName%></li>
+    <li>Date:<%=appointment.date%></li>
+    <li>Time:<%=appointment.time%></li>
+    <li>Doctor<%=appointment.doctor%></li>
+    <li>Date Created:<%=appointment.userCreated%></li>
+    <li>author:<%=appointment.author%></li>
+    </ul>
+    </div>
+    <%}%>
+   <%}%>
+   <a href="/appointment"><button>Add a appointment</button></a>
+</body>
+</html>

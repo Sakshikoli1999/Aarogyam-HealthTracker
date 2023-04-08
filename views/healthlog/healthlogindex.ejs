@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <div style="background-image: url('https://res.cloudinary.com/dy0chmf6u/image/upload/c_scale,h_527,w_1148/v1680929721/empty-hallway-background_q9sm6z.jpg');  background-size: cover; " class=" text-black ">
+	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+  <div class="container mt-4 p-4">
+    
+              <h1 class="text-center ">
+                 
+    Check your Health 
+              </h1 >
+              <div>
+
+              </div>
+              <form action="/healthlog" method="POST">
+              <form>
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-lg-4">
+                        Enter Name
+                      </label>
+                    
+                      <div class="col-sm-8 col-lg-8">
+                        <input type="text" id="doctor" name="doctor" class="form-control" required>
+                         
+                      </div>
+                  </div>
+                  <!---->
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Date
+                    </label>
+                    
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="date" id="date" name="date" class="form-control" required>
+                    </div>
+                </div>
+           
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                      Reason for Visit
+                    </label>
+                     <div class="col-sm-8 col-lg-8">
+                        <input type="text" id="visitPurpose" name="visitPurpose" class="form-control" required>
+                   
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                      Enter Height
+                    </label>
+                   
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="text" id="heightIn" name="heightIn" class="form-control" required>
+                  
+                       </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Enter Notes
+                    </label>
+                    
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="text" id="notes" name="notes" class="form-control" required>
+                   
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row justify-content-end">
+                    <div class="col-sm-5">
+                        <button type="submit"class="btn btn-form">
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+
+            
+          </div>
+          
+      </div>
+  </div>
+</form>
+</html>
+
+<style>
+    
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 1400px;
+    height: 527px;
+  }
+
+  #hero {
+      width:max-content;
+      height: max-content;
+      background-size: cover;
+      position: relative;
+    }
+    div{
+        font-size: medium;
+        font-weight: 1000;
+        color: #180f0f;
+    }
+  
+    
+   
+    
+  body {
+   
+     background: #eee;
+     background-attachment: scroll;
+     background-attachment: local;
+     background-image: -moz-linear-gradient();
+  }
+    
+    
+    
+    .main-btn {
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+    
+      border-radius: 50px;
+      transition: 0.5s;
+      margin: 10px;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+    
+     .main-btn:hover {
+      background: #11dbcf;
+      border: 2px solid #11dbcf;
+      text-decoration: none;
+      color:crimson;
+    }
+   .form-group .btn-form{
+    background: #11dbcf;
+    border: 2px solid #11dbcf;
+    text-decoration: none;
+    color:black;
+   }
+
+     
+</style>
+
+<!--
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 1000;
+    line-height: 56px;
+    color: #fff;
+    font-size: large;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: center;
+  }
+
+  
+    #hero h2 {
+      color: #eee;
+      margin-bottom: 40px;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }

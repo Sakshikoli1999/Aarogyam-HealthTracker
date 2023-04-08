@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthLog</title>
+</head>
+<body>
+   <% for(healthlog of healthlogs){%>
+    <div>
+    <ul>
+        <li>Date:<%=healthlog.date%></li>
+        <li>Name:<%=healthlog.doctor%></li>
+        <li>Notes:<%=healthlog.notes%></li>
+    <li>Reason<%=healthlog.visitPurpose%></li>
+    <li>Height<%=healthlog.heightIn%></li>
+    <li>Date Created:<%=healthlog.userCreated%></li> 
+    </ul>
+    </div>
+   <%}%>
+</body>
+</html>
+

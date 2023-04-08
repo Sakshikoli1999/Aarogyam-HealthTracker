@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription</title>
+</head>
+
+<body>
+    <h1>Add a prescrption</h1>
+    <form action="/prescription" method="POST">
+        <div>
+            <label for="prescriptionName">Name</label>
+            <input type="text" id="prescriptionName" name="prescriptionName">
+        </div>
+        <div>
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" name="amount">
+        </div>
+        <div>
+            <label for="dateprescibed">Date</label>
+            <input type="date" id="dateprescribed" name="dateprescribed">
+        </div>
+        <div>
+            <label for="doctorprescribed">Doctor</label>
+            <input type="text" id="doctorprescribed" name="doctorprescribed">
+        </div>
+        <div>
+            <label for="generalinstructions">Instructions</label>
+            <input type="text" id="generalinstructions" name="generalinstructions">
+        </div>
+
+        <button>Add prescription</button>
+    </form>
+
+</body>
+
+</html>
+
